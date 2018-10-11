@@ -1,26 +1,39 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
-import 'typeface-open-sans'
-
-import '../styles/style.scss'
+import Layout from '../components/layout'
 
 class Home extends React.Component {
   render() {
-    // const data = this.props.data;
+    const data = this.props.data
 
     return (
-      <div>
-        <Helmet htmlAttributes={{ lang: 'en' }}>
-          <meta charSet="utf-8" />
-          <title>QUL Gatsby Starter</title>
-        </Helmet>
-        <p>Hello World</p>
-      </div>
+      <Layout>
+        <h2>There are {data.allMarkdownRemark.totalCount} posts</h2>
+        <ul>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <li key={node.id}>{node.frontmatter.title}</li>
+          ))}
+        </ul>
+      </Layout>
     )
   }
 }
 
 export default Home
 
-// export const pageQuery = graphql``;
+export const query = graphql`
+  query {
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`

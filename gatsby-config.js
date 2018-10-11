@@ -1,9 +1,17 @@
 module.exports = {
   pathPrefix: `/`,
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/`,
+        name: 'pages',
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
+    `gatsby-transformer-remark`,
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-manifest',

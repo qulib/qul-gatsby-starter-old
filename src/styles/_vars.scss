@@ -1,15 +1,19 @@
-/* primary palette */
-$colour-primary-blue: #00305e;
-$colour-primary-red: #b61137;
-$colour-primary-gold: #fba900;
+/* from Queen's logo */
+$queens-logo-black: #231f20;
+$queens-logo-red: #b81237;
+$queens-logo-blue: #002f5e;
+$queens-logo-gold: #febe10;
+$queens-logo-brown: #915b3d;
+$queens-logo-green: #00a65e;
+$queens-logo-purple: #662d91;
 
-/* secondary palette */
-$colour-secondary-blue: #406486;
-$colour-secondary-dark-gray: #666666;
-$colour-secondary-light-gray: #8c8c8c;
-$colour-secondary-yellow: #fcc34c;
+/* from QUL website */
+$clr-secondary-blue: #406486;
+$clr-secondary-dark-gray: #666666;
+$clr-secondary-light-gray: #8c8c8c;
+$clr-secondary-yellow: #fcc34c;
 
 /* text pallete */
-$colour-text-main: #3c3c3c;
-$colour-text-link: #1d70ad;
-$colour-text-link-visited: #803580;
+$clr-text-main: $queens-logo-black;
+$clr-text-link: #1d70ad;
+$clr-text-link-visited: $queens-logo-purple;
