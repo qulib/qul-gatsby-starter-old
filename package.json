@@ -1,0 +1,40 @@
+{
+  "name": "qul-gatsby-starter",
+  "repository": "https://github.com/qulib/qul-gatsby-starter",
+  "description": "Basic starter for Gatsby",
+  "version": "1.0.0",
+  "author": "Paul Clifford",
+  "dependencies": {
+    "gatsby": "^2.0.6",
+    "gatsby-image": "^2.0.6",
+    "gatsby-plugin-manifest": "^2.0.2",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sass": "^2.0.1",
+    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-source-wordpress": "^3.0.1",
+    "gatsby-transformer-sharp": "^2.1.1",
+    "lodash": "^4.16.4",
+    "node-sass": "^4.9.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "react-slick": "^0.23.1",
+    "slick-carousel": "^1.8.1",
+    "typeface-open-sans": "0.0.54"
+  },
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "develop": "npm run clean && gatsby develop",
+    "build": "npm run clean && gatsby build",
+    "start": "gatsby serve",
+    "deploy": "npm run clean && gatsby build --prefix-paths", 
+    "clean": "rimraf .cache public",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\""
+  },
+  "devDependencies": {
+    "prettier": "^1.14.3",
+    "rimraf": "^2.6.2"
+  }
+}
