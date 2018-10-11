@@ -1,20 +1,4 @@
-html {
-  background: url(../images/qul-bg.svg) no-repeat center center fixed;
-  background-size: cover;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: $clr-text-main;
-}
-
-a {
-  color: $clr-text-link;
-  &:visited {
-    color: $clr-text-link-visited;
-  }
-  &:hover {
-    text-decoration: none;
-    color: $queens-logo-red;
-  }
+#site-main {
+  background-color: white;
+  padding: 2rem;
 }
