@@ -1,4 +1,3 @@
-# Digital Future Display
- Digital display for the Digital Future showcase
+# QUL Gatsby starter
 
- Build with WordPress and Gatsby v2
+A stater template for Gatsby at QUL

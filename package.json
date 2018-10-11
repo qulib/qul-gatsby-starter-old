@@ -1,7 +1,7 @@
 {
   "name": "qul-gatsby-starter",
   "repository": "https://github.com/qulib/qul-gatsby-starter",
-  "description": "Basic starter for Gatsby",
+  "description": "A stater template for Gatsby at QUL",
   "version": "1.0.0",
   "author": "Paul Clifford",
   "dependencies": {
@@ -29,7 +29,7 @@
     "develop": "npm run clean && gatsby develop",
     "build": "npm run clean && gatsby build",
     "start": "gatsby serve",
-    "deploy": "npm run clean && gatsby build --prefix-paths", 
+    "deploy": "npm run clean && gatsby build --prefix-paths",
     "clean": "rimraf .cache public",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\""
   },
