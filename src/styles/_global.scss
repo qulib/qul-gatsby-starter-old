@@ -8,17 +8,10 @@ body {
   color: $clr-text-main;
 }
 
-a {
-  color: $clr-text-link;
-  text-decoration: none;
-  font-weight: bold;
+.debug {
+  background-color: orangered;
+}
 
-  // &:visited {
-  //   color: $clr-text-link-visited;
-  // }
+.site {
 
-  &:hover {
-    text-decoration: underline;
-    color: $queens-logo-red;
-  }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../components/Layout.jsx'
 
 class Home extends React.Component {
   render() {
@@ -8,6 +8,7 @@ class Home extends React.Component {
 
     return (
       <Layout>
+        <h1>Page title</h1>
         <h2>There are {data.allMarkdownRemark.totalCount} posts</h2>
         <ul>
           {data.allMarkdownRemark.edges.map(({ node }) => (

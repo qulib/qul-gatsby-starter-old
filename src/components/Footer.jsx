@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import queensLogo from '../images/qu-logo.svg'
 
 const date = new Date()
@@ -7,12 +7,7 @@ const date = new Date()
 const Footer = () => (
   <footer id="site-footer">
     <div className="colophon">
-      <p>
-        © Copyright {date.getFullYear() + ' '}
-        <Link to="/" title="Home">
-          Queen's University Library
-        </Link>
-      </p>
+      <p>© Copyright {date.getFullYear()} <strong>Queen's University Library</strong></p>
       <p>
         Queen's University Library is committed to an inclusive library
         community with accessible goods, services and facilities that respect

@@ -1,5 +1,17 @@
 #site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   background-color: white;
-  border-bottom: 1px solid $queens-logo-blue;
-  padding: 2rem;
+  border-bottom: 3px solid $queens-logo-blue;
+  padding: 1rem 2rem;
+
+  .site-logo {
+    display: inline-block;
+    // background-color: aquamarine;
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
