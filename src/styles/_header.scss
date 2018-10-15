@@ -1,12 +1,13 @@
 #site-header {
   background-color: white;
   border-bottom: 3px solid $queens-logo-blue;
-  padding: 1rem;
+  padding: 1rem 2rem;
 
   #site-logo {
     a {
       // background-color: aquamarine;
       display: inline-block; // to make link fill container
+      height: 5.5rem;
 
       img {
         max-width: 100%;
@@ -14,37 +15,79 @@
     }
   }
 
-  #site-nav {
-    padding: 2rem 0 0.5rem 0;
+  #site-search {
+    display: none;
+  }
 
-    ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      list-style-type: none;
+  #nav-block {
+    overflow: hidden;
 
-      li {
-        margin-right: 2rem;
+    #util-nav,
+    #site-nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
 
-        a {
-          text-decoration: none;
-          text-transform: uppercase;
-          color: $clr-primary;
+        li {
+          &:hover {
+            background-color: $clr-qul-light-blue;
+          }
+
+          a {
+            padding: 1rem;
+            text-decoration: none;
+            color: $clr-primary;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    #util-nav {
+      // background-color: lightblue;
+      color: $clr-primary;
+      font-size: 0.9rem;
+
+      ul {
+        li {
+          svg {
+            padding-right: 0.3rem;
+          }
+        }
+      }
+    }
+
+    #site-nav {
+      // background-color: lightcoral;
+
+      ul {
+        li {
+          a {
+            text-transform: uppercase;
+          }
         }
       }
     }
   }
 
-  // @include breakpoint(800px) {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: flex-end;
-  // }
-
-  @include breakpoint(1150px) {
+  @include breakpoint(1160px) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    // #nav-block {
+    //   display: grid;
+
+    //   #site-nav {
+    //     order: 2;
+    //   }
+
+    //   #site-search {
+    //     order: 1;
+    //   }
+    // }
   }
 }
