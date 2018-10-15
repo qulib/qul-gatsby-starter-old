@@ -1,7 +1,6 @@
 #site-footer {
   background-color: white;
   border-top: 1px solid $clr-primary;
-
   margin: 0 2vw;
   padding: 2rem;
 
@@ -10,28 +9,19 @@
   }
 
   .queens-logo {
-    text-align: center;
-    // background-color: aquamarine;
+    text-align: right;
 
     img {
       max-width: 100%;
-
     }
   }
 
-
-  @include breakpoint(phablet) {
+  @include breakpoint(700px) {
     justify-content: space-between;
     display: flex;
 
     .colophon {
       max-width: 70%;
     }
-
-
   }
-
-
-
-
 }

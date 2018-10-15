@@ -3,20 +3,48 @@
   border-bottom: 3px solid $queens-logo-blue;
   padding: 1rem;
 
-  .site-logo {
-    // background-color: aquamarine;
-    display: inline-block; // to make link fill container
+  #site-logo {
+    a {
+      // background-color: aquamarine;
+      display: inline-block; // to make link fill container
 
-    img {
-      max-width: 100%;
+      img {
+        max-width: 100%;
+      }
     }
   }
 
-  @include breakpoint(laptop) {
+  #site-nav {
+    padding: 2rem 0 0.5rem 0;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+
+      li {
+        margin-right: 2rem;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $clr-primary;
+        }
+      }
+    }
+  }
+
+  // @include breakpoint(800px) {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: flex-end;
+  // }
+
+  @include breakpoint(1150px) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
-
-
 }

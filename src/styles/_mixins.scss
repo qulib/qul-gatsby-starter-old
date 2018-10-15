@@ -1,0 +1,14 @@
+// Wraps @content in a @media block using a given query.
+// @param $pixels pixel width of breakpoint
+// @ param  $min set to false for max-with (e.g. mobile only)
+@mixin breakpoint($pixels, $min: true) {
+  @if $min == true {
+    @media (min-width: $pixels) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $pixels) {
+      @content;
+    }
+  }
+}

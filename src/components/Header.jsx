@@ -5,7 +5,7 @@ import Nav from './Nav.jsx'
 
 const Header = () => (
   <header id="site-header">
-    <span className="site-logo">
+    <span id="site-logo">
       <Link to="/">
         <img src={qulLogo} width="500" alt="Queen's University Library" />
       </Link>
