@@ -1,20 +1,37 @@
 #site-footer {
   background-color: white;
   border-top: 1px solid $clr-primary;
-  justify-content: space-between;
-  display: flex;
+
   margin: 0 2vw;
   padding: 2rem;
 
   .colophon {
     font-size: 0.9rem;
-    max-width: 70%;
   }
 
   .queens-logo {
+    text-align: center;
+    // background-color: aquamarine;
 
     img {
       max-width: 100%;
+
     }
   }
+
+
+  @include breakpoint(phablet) {
+    justify-content: space-between;
+    display: flex;
+
+    .colophon {
+      max-width: 70%;
+    }
+
+
+  }
+
+
+
+
 }

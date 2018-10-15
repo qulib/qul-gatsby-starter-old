@@ -7,12 +7,12 @@
     color: $clr-text-link;
     text-decoration: none;
     font-weight: bold;
-  
+
     &:hover {
       text-decoration: underline;
       color: $queens-logo-red;
     }
-  
+
     &:visited {
       color: $clr-text-link-visited;
     }
@@ -27,11 +27,21 @@
 
   h2 {
     color: $clr-primary;
-    // color: red;
     font-weight: bold;
   }
 
   ul {
+    padding-inline-start: 0.5rem;
 
+    li {
+      list-style-type: none;
+      line-height: 1.8rem;
+
+      &:before {
+        content: '\25CF '; // https://www.w3schools.com/charsets/ref_utf_geometric.asp
+        color: $clr-secondary;
+        padding-right: 0.5rem;
+      }
+    }
   }
 }

@@ -1,17 +1,16 @@
 #site-nav {
-  // background-color: aquamarine;
-  // display: flex;
-  // align-items: center;
-  padding-bottom: 0.5rem;
+  padding: 2rem 0 0.5rem 0;
 
   ul {
     // background-color: lightcoral;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
 
     li {
-      display: inline-block;
-      margin-right: 1.5rem;
+      margin-right: 2rem;
 
       a {
         text-decoration: none;

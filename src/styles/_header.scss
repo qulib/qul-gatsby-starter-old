@@ -1,17 +1,22 @@
 #site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   background-color: white;
   border-bottom: 3px solid $queens-logo-blue;
-  padding: 1rem 2rem;
+  padding: 1rem;
 
   .site-logo {
-    display: inline-block;
     // background-color: aquamarine;
+    display: inline-block; // to make link fill container
 
     img {
       max-width: 100%;
     }
   }
+
+  @include breakpoint(laptop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+
 }
