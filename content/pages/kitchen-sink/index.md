@@ -1,5 +1,5 @@
 ---
-title: Kitchen sink
+title: Kitchen Sink
 ---
 
 Here's an image!
