@@ -6,7 +6,7 @@
   #site-logo {
     a {
       // background-color: aquamarine;
-      display: inline-block; // to make link fill container
+      display: inline-block;
       height: 5.5rem;
 
       img {
@@ -21,58 +21,55 @@
 
   #nav-block {
     overflow: hidden;
+  }
 
-    #util-nav,
-    #site-nav {
-      ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        list-style-type: none;
-        justify-content: flex-end;
+  #util-nav,
+  #site-nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style-type: none;
+      justify-content: flex-end;
 
-        li {
-          &:hover {
-            background-color: $clr-qul-light-blue;
-          }
+      li {
+        &:hover {
+          background-color: $clr-qul-light-blue;
+        }
 
-          a {
-            padding: 1rem;
-            text-decoration: none;
-            color: $clr-primary;
-            display: inline-block;
-          }
+        a {
+          padding: 1rem;
+          text-decoration: none;
+          color: $clr-primary;
+          display: inline-block;
         }
       }
     }
+  }
 
-    #util-nav {
-      // background-color: lightblue;
-      // color: $clr-primary;
-      font-size: 0.9rem;
+  #util-nav {
+    // background-color: lightblue;
 
-      ul {
-        li {
-          a {
-            display: flex;
-            // align-content: center;
-          }
-          svg {
-            // font-size: 1.3rem;
-            margin-right: 0.5rem;
-          }
+    ul {
+      li {
+        svg {
+          margin-right: 0.5rem;
+        }
+        span {
+          display: none;
+          font-size: 0.9rem;
         }
       }
     }
+  }
 
-    #site-nav {
-      // background-color: lightcoral;
+  #site-nav {
+    // background-color: lightcoral;
 
-      ul {
-        li {
-          a {
-            text-transform: uppercase;
-          }
+    ul {
+      li {
+        a {
+          text-transform: uppercase;
         }
       }
     }
@@ -83,16 +80,14 @@
     justify-content: space-between;
     align-items: flex-end;
 
-    // #nav-block {
-    //   display: grid;
-
-    //   #site-nav {
-    //     order: 2;
-    //   }
-
-    //   #site-search {
-    //     order: 1;
-    //   }
-    // }
+    #util-nav {
+      ul {
+        li {
+          span {
+            display: inline;
+          }
+        }
+      }
+    }
   }
 }
