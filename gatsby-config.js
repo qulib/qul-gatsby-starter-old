@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/`,
+  pathPrefix: `/qul-gatsby-starter`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
