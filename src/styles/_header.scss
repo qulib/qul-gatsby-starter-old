@@ -3,88 +3,86 @@
   border-bottom: 3px solid $queens-logo-blue;
   padding: 1rem 2rem;
 
-  #site-logo {
-    a {
-      // background-color: aquamarine;
-      display: inline-block;
-      height: 5.5rem;
+  .container {
+    max-width: 1200px;
 
-      img {
-        max-width: 100%;
-      }
-    }
-  }
-
-  #site-search {
-    display: none;
-  }
-
-  #nav-block {
-    overflow: hidden;
-  }
-
-  #util-nav,
-  #site-nav {
-    ul {
-      margin: 0;
-      padding: 0;
+    @include breakpoint(1160px) {
       display: flex;
-      list-style-type: none;
-      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
 
-      li {
-        &:hover {
-          background-color: $clr-qul-light-blue;
-        }
+    #site-logo {
+      a {
+        // background-color: aquamarine;
+        display: inline-block;
+        height: 5.5rem;
 
-        a {
-          padding: 1rem;
-          text-decoration: none;
-          color: $clr-primary;
-          display: inline-block;
+        img {
+          max-width: 100%;
         }
       }
     }
-  }
 
-  #util-nav {
-    // background-color: lightblue;
+    #site-search {
+      display: none;
+    }
 
-    ul {
-      li {
-        svg {
-          margin-right: 0.5rem;
-        }
-        span {
-          display: none;
-          font-size: 0.9rem;
+    #nav-block {
+      overflow: hidden;
+    }
+
+    #util-nav,
+    #site-nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+
+        li {
+          &:hover {
+            background-color: $clr-qul-light-blue;
+          }
+
+          a {
+            padding: 1rem;
+            text-decoration: none;
+            color: $clr-primary;
+            display: inline-block;
+          }
         }
       }
     }
-  }
-
-  #site-nav {
-    // background-color: lightcoral;
-
-    ul {
-      li {
-        a {
-          text-transform: uppercase;
-        }
-      }
-    }
-  }
-
-  @include breakpoint(1160px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
 
     #util-nav {
+      // background-color: lightblue;
+
       ul {
         li {
+          svg {
+            margin-right: 0.5rem;
+          }
           span {
-            display: inline;
+            display: none;
+            font-size: 0.9rem;
+
+            @include breakpoint(1160px) {
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+
+    #site-nav {
+      // background-color: lightcoral;
+
+      ul {
+        li {
+          a {
+            text-transform: uppercase;
           }
         }
       }
