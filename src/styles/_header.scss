@@ -89,7 +89,6 @@
             &:hover {
               .dropdown {
                 display: block;
-                // max-height: 600px;
 
                 @include breakpoint(1160px) {
                   display: flex;
@@ -105,17 +104,16 @@
             }
 
             .dropdown {
+              transition: all 1s ease-in-out;
               background-color: white;
-              background-color: lightgoldenrodyellow;
               border-bottom: 3px solid $clr-primary;
-              left: 0;
               margin-top: 1rem;
               position: absolute;
+              left: 0;
               padding: 1rem 0;
               width: 100%;
               z-index: 1;
               font-size: 0.9rem;
-              transition: all 1s ease-in-out;
               display: none;
 
               .column {
@@ -137,7 +135,6 @@
                 a {
                   padding: 0.5rem 0;
                   text-transform: capitalize;
-                  background-color: bisque;
 
                   &:hover {
                     text-decoration: underline;
