@@ -8,6 +8,14 @@ body {
   color: $clr-text-main;
 }
 
-.site {
+a, button {
+  &:focus {
+    outline: 1px dotted $clr-primary;
+  }
+}
 
+button {
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
 }

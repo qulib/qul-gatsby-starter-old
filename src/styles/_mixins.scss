@@ -12,3 +12,14 @@
     }
   }
 }
+
+// used to set button styles
+// @param $baseColour the background colour of the button
+@mixin buttonStyle($baseColour) {
+  background-color: $baseColour;
+  border-bottom: 3px solid $clr-text-main;
+  color: white;
+  &:hover {
+    background-color: darken($baseColour, 10%);
+  }
+}

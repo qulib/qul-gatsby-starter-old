@@ -4,7 +4,7 @@
   padding: 1rem 2rem;
 
   .container {
-    max-width: 1200px;
+    max-width: $max-width;
 
     @include breakpoint(1160px) {
       display: flex;
@@ -61,15 +61,19 @@
 
       ul {
         li {
-          svg {
-            margin-right: 0.5rem;
-          }
-          span {
-            display: none;
-            font-size: 0.9rem;
+          a {
+            padding: 1rem;
 
-            @include breakpoint(1160px) {
-              display: inline;
+            svg {
+              margin-right: 0.5rem;
+            }
+            span {
+              display: none;
+              font-size: 0.9rem;
+
+              @include breakpoint(1160px) {
+                display: inline;
+              }
             }
           }
         }
@@ -77,12 +81,70 @@
     }
 
     #site-nav {
-      // background-color: lightcoral;
-
       ul {
         li {
-          a {
-            text-transform: uppercase;
+          .dropdown-container {
+            max-width: $max-width;
+
+            &:hover {
+              .dropdown {
+                display: block;
+                // max-height: 600px;
+
+                @include breakpoint(1160px) {
+                  display: flex;
+                  justify-content: space-evenly;
+                }
+              }
+            }
+
+            button {
+              border: none;
+              text-transform: uppercase;
+              color: $clr-primary;
+            }
+
+            .dropdown {
+              background-color: white;
+              background-color: lightgoldenrodyellow;
+              border-bottom: 3px solid $clr-primary;
+              left: 0;
+              margin-top: 1rem;
+              position: absolute;
+              padding: 1rem 0;
+              width: 100%;
+              z-index: 1;
+              font-size: 0.9rem;
+              transition: all 1s ease-in-out;
+              display: none;
+
+              .column {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+
+                @include breakpoint(1160px) {
+                  max-width: 300px;
+                  width: 25%;
+                }
+
+                span {
+                  font-weight: bold;
+                  text-transform: uppercase;
+                  color: $clr-primary;
+                  padding-bottom: 1rem;
+                }
+                a {
+                  padding: 0.5rem 0;
+                  text-transform: capitalize;
+                  background-color: bisque;
+
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
           }
         }
       }

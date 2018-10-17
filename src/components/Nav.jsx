@@ -39,16 +39,116 @@ const Nav = () => (
     <nav id="site-nav" aria-label="Primary Navigation">
       <ul>
         <li>
-          <Link to="/">Search</Link>
+          <section className="dropdown-container">
+            <button>Search</button>
+            <section className="dropdown">
+              <div className="column">
+                <span>Search Tools</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+              <div className="column">
+                <span>Types of Information</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+              <div className="column">
+                <span>Subjects &amp; Courses</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+            </section>
+          </section>
         </li>
         <li>
-          <Link to="/">Help &amp; Services</Link>
+          <section className="dropdown-container">
+            <button>Help &amp; Services</button>
+            <section className="dropdown">
+              <div className="column">
+                <span>Col</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+              <div className="column">
+                <span>Col</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+              <div className="column">
+                <span>Col</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+              <div className="column">
+                <span>Col</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+            </section>
+          </section>
         </li>
         <li>
-          <Link to="/">Locations &amp; Hours</Link>
+          <section className="dropdown-container">
+            <button>Locations &amp; Hours</button>
+            <section className="dropdown">
+              <div className="column">
+                <span>Col</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+              <div className="column">
+                <span>Col</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+              <div className="column">
+                <span>Col</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+            </section>
+          </section>
         </li>
         <li>
-          <Link to="/">About Us</Link>
+          <section className="dropdown-container">
+            <button>About Us</button>
+            <section className="dropdown">
+              <div className="column">
+                <span>Col</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+              <div className="column">
+                <span>Col</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+              <div className="column">
+                <span>Col</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+              <div className="column">
+                <span>Col</span>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+                <Link to="/">link</Link>
+              </div>
+            </section>
+          </section>
         </li>
       </ul>
     </nav>
