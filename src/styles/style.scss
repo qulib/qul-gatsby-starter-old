@@ -1,10 +1,13 @@
-@import "~sanitize.css/sanitize.css";
+@import '~sanitize.css/sanitize.css';
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
 
 @import 'vars';
 @import 'mixins';
 @import 'global';
-@import 'header';
 @import 'main';
-@import 'footer';
+
+// components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/accordian';
