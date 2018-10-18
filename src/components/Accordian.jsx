@@ -22,10 +22,10 @@ class Accordian extends React.Component {
       <Fragment>
         <div className="accordian">
           <span
-            className={this.state.open ? 'title open' : 'title closed'}
+            className={this.state.open ? 'label open' : 'label closed'}
             onClick={() => this.setState({ open: !this.state.open })}
           >
-            {this.props.title}
+            <span className="title">{this.props.title}</span>
             <FaAngleUp className="open-icon"/>
             <FaAngleDown className="closed-icon"/>
           </span>

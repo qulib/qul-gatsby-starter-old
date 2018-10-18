@@ -2,16 +2,18 @@
   // border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 
-  .title {
-    display: block;
-    font-size: 2rem;
+  .label {
     color: $clr-primary;
     cursor: pointer;
+    display: block;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
     margin: 0;
     padding: 1rem;
 
-    svg {
-      float: right;
+    .title {
+      font-weight: 300;
     }
 
     &:hover {
