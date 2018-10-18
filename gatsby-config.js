@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://www.example.com`,
+  },
   pathPrefix: `/qul-gatsby-starter`,
   plugins: [
     {
