@@ -5,9 +5,12 @@
 @import 'vars';
 @import 'mixins';
 @import 'global';
-@import 'main';
 
 // components
-@import 'components/header';
-@import 'components/footer';
-@import 'components/accordian';
+@import 'header';
+@import 'footer';
+@import 'breadcrumbs';
+@import 'main';
+@import 'sidebar';
+
+@import 'accordian';

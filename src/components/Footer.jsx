@@ -1,24 +1,31 @@
 import React from 'react'
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 import queensLogo from '../images/qu-logo.svg'
 
 const date = new Date()
 
 const Footer = () => (
-  <footer id="site-footer">
-  
+  <footer id="site-footer" className="container">
     <div className="colophon">
-      <p>© Copyright {date.getFullYear()} <strong>Queen's University Library</strong></p>
       <p>
-        Queen's University Library is committed to an inclusive library community with accessible goods, services and facilities that respect the dignity and independence of persons with disabilities.
+        © Copyright {date.getFullYear()}{' '}
+        <Link to="/">Queen's University Library</Link>
       </p>
       <p>
-        Queen's University is situated on traditional Anishinaabe and Haudenosaunee Territory.
+        Queen's University Library is committed to an inclusive library
+        community with accessible goods, services and facilities that respect
+        the dignity and independence of persons with disabilities.
+      </p>
+      <p>
+        Queen's University is situated on traditional Anishinaabe and
+        Haudenosaunee Territory.
       </p>
     </div>
 
     <div className="queens-logo">
-      <img src={queensLogo} width="200" alt="Queen's University" />
+      <a href="https://queensu.ca">
+        <img src={queensLogo} width="200" alt="Queen's University" />
+      </a>
     </div>
   </footer>
 )

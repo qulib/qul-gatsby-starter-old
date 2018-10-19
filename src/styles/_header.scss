@@ -6,7 +6,7 @@
   .container {
     max-width: $max-width;
 
-    @include breakpoint(1160px) {
+    @include breakpoint($max-width) {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
@@ -71,7 +71,7 @@
               display: none;
               font-size: 0.9rem;
 
-              @include breakpoint(1160px) {
+              @include breakpoint($max-width) {
                 display: inline;
               }
             }
@@ -90,7 +90,7 @@
               .dropdown {
                 display: block;
 
-                @include breakpoint(1160px) {
+                @include breakpoint($max-width) {
                   display: flex;
                   justify-content: space-evenly;
                 }
@@ -121,7 +121,7 @@
                 flex-direction: column;
                 padding: 1rem;
 
-                @include breakpoint(1160px) {
+                @include breakpoint($max-width) {
                   max-width: 300px;
                   width: 25%;
                 }

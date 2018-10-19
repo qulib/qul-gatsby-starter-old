@@ -1,7 +1,13 @@
 #site-main {
   background-color: white;
   padding: 2rem;
-  margin: 2rem 2vw 0;
+  width: 100%;
+  max-width: $med-width;
+  margin: 0 auto;
+
+  // @include breakpoint($max-width) {
+    
+  // }
 
   a {
     color: $clr-text-link;
@@ -12,23 +18,46 @@
       text-decoration: underline;
       color: $queens-logo-red;
     }
+  }
 
-    &:visited {
-      // color: $clr-text-link-visited;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 2rem 0 1rem 0;
+    color: $clr-primary;
+    font-weight: 300;
   }
 
   h1 {
-    color: $clr-primary;
-    font-weight: 300;
     font-size: 2.5rem;
     margin-top: 0;
   }
 
   h2 {
-    color: $clr-primary;
-    font-weight: bold;
+    border-bottom: 1px solid $clr-qul-light-blue;
+    font-size: 2rem;
   }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+
 
   ul {
     padding-inline-start: 0.5rem;
@@ -38,10 +67,27 @@
       line-height: 1.8rem;
 
       &:before {
-        content: '\25CF '; // https://www.w3schools.com/charsets/ref_utf_geometric.asp
+        // https://www.w3schools.com/charsets/ref_utf_geometric.asp
+        content: '\25CF';
         color: $clr-secondary;
-        padding-right: 0.5rem;
+        padding-right: 1rem;
       }
+    }
+  }
+
+  blockquote {
+    color: $clr-secondary;
+    font-style: italic;
+    margin: 1rem 0;
+    background: url(../images/blockquote.svg) no-repeat;
+    background-size: 120px;
+    min-height: 120px;
+
+    p {
+      padding-left: 4rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 1.6;
     }
   }
 }

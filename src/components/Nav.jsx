@@ -30,7 +30,6 @@ const Nav = () => (
         <li>
           <Link to="/">
             <FaSearch />
-            <span>Site Search</span>
           </Link>
         </li>
       </ul>

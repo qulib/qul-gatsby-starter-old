@@ -1,0 +1,43 @@
+#site-footer {
+  background-color: white;
+  border-top: 1px solid $clr-primary;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  a {
+    color: $clr-text-link;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+      color: $queens-logo-red;
+    }
+  }
+
+  .colophon p {
+    font-size: 0.9rem;
+  }
+
+  .queens-logo {
+    text-align: right;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @include breakpoint($med-width) {
+    justify-content: space-between;
+    display: flex;
+    max-width: $med-width;
+
+    .colophon {
+      max-width: 70%;
+    }
+  }
+
+  @include breakpoint($max-width) {
+    max-width: $max-width;
+  }
+}

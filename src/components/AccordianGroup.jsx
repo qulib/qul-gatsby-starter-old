@@ -8,7 +8,7 @@ const Content = posed.section({
   open: { height: 'auto' },
 })
 
-class Accordian extends React.Component {
+class AccordianGroup extends React.Component {
   constructor(props) {
     super(props)
 
@@ -43,4 +43,4 @@ class Accordian extends React.Component {
   }
 }
 
-export default Accordian
+export default AccordianGroup

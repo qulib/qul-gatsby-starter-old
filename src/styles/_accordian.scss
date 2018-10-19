@@ -1,23 +1,24 @@
 .accordian {
-  // border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid $clr-qul-light-blue;
+  margin: 2rem 0;
+
 
   .label {
     color: $clr-primary;
     cursor: pointer;
-    display: block;
     display: flex;
     font-size: 2rem;
     justify-content: space-between;
-    margin: 0;
     padding: 1rem;
+    transition: all 0.4s ease-out;
 
     .title {
       font-weight: 300;
     }
 
     &:hover {
-      background-color: darken(white, 3%);
+      background-color: $clr-qul-light-blue;
+
     }
 
     &.open {
