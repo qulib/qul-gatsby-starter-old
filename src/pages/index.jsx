@@ -1,43 +1,16 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import Layout from '../components/Layout.jsx'
 
 export default ({ data }) => {
   return (
-    <Layout>
+    <Layout title="Home">
       <h1>Home</h1>
-      <h2>Markdown pages</h2>
-      <ul>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <li key={node.id}>
-            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-          </li>
-        ))}
-      </ul>
+      <p>This is the home page.</p>
       <h2>JSX pages</h2>
       <ul>
-        <li><Link to="/accordian-test">Accordian Test</Link></li>
+        <li><Link to="/uikit-test">UIkit Test</Link></li>
       </ul>
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    allMarkdownRemark {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-          }
-          fields {
-            slug
-          }
-          excerpt
-        }
-      }
-    }
-  }
-`

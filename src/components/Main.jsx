@@ -1,4 +1,5 @@
 import React from 'react'
+import "./style.scss"
 
 const Main = (props) => (
   <main id="site-main">
