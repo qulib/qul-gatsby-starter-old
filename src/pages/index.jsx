@@ -9,7 +9,7 @@ export default ({ data }) => {
       <p>This is the home page.</p>
       <h2>JSX pages</h2>
       <ul>
-        <li><Link to="/uikit-test">UIkit Test</Link></li>
+        <li><Link to="/test"> Test</Link></li>
       </ul>
     </Layout>
   )

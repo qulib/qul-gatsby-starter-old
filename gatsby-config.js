@@ -17,7 +17,7 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#00305e',
         display: 'minimal-ui',
-        icon: 'src/images/qul-squares.png',
+        icon: 'src/assets/images/qul-squares.png',
       },
     },
     'gatsby-plugin-offline',

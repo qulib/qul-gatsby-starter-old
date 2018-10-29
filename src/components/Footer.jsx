@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import queensLogo from '../images/qu-logo.svg'
-import "./style.scss"
+import queensLogo from '../assets/images/qu-logo.svg'
 
 const date = new Date()
 
