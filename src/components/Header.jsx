@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Search from './Search.jsx'
 import Nav from './Nav.jsx'
-import qulLogo from '../assets/images/qul-logo.svg'
+import qulLogo from '../assets/images/qul-logo-middle.svg'
 
 const Header = () => (
   <header id="site-header">

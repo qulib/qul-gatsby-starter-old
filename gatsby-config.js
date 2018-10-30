@@ -9,6 +9,12 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // https://www.gatsbyjs.org/packages/gatsby-plugin-styled-components/
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'QUL Gatsby Starter',
