@@ -8,12 +8,12 @@ body {
   color: $clr-text-main;
 }
 
-a,
-button {
-  &:focus {
-    outline: 1px dotted $clr-primary;
-  }
-}
+// a,
+// button {
+//   &:focus {
+//     outline: 1px dotted $clr-primary;
+//   }
+// }
 
 p {
   font-size: 1rem;

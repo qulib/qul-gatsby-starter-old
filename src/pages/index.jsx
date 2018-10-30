@@ -9,7 +9,8 @@ export default ({ data }) => {
       <p>This is the home page.</p>
       <h2>JSX pages</h2>
       <ul>
-        <li><Link to="/test"> Test</Link></li>
+        <li><Link to="/html-test">HTML Test</Link></li>
+        <li><Link to="/material-ui-test">Material UI Test</Link></li>
       </ul>
     </Layout>
   )

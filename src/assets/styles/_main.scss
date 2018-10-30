@@ -6,7 +6,7 @@
   margin: 0 auto;
 
   // @include breakpoint($max-width) {
-    
+
   // }
 
   a {
@@ -58,8 +58,6 @@
     font-size: 1rem;
   }
 
-
-
   ul {
     padding-inline-start: 0.5rem;
 
@@ -76,13 +74,26 @@
     }
   }
 
+  ol {
+
+    padding-inline-start: 1.7rem;
+
+    li {
+      line-height: 1.8rem;
+      padding-left: 0.5rem;
+    }
+
+  }
+
   blockquote {
     color: $clr-secondary;
     font-style: italic;
     margin: 1rem 0;
     background: url(../images/blockquote.svg) no-repeat;
-    background-size: 120px;
-    min-height: 120px;
+    font-weight: 300;
+    background-size: 100px;
+    min-height: 100px;
+    display: flex;
 
     p {
       padding-left: 4rem;

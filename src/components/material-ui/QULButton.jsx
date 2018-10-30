@@ -5,7 +5,6 @@ import Button from '@material-ui/core/Button'
 const StyledButton = styled(Button)`
   && {
     border-radius: 0;
-    border: 0;
     margin-right: 1rem;
     margin-top: 1rem;
     font-family: 'Open Sans', sans-serif;
