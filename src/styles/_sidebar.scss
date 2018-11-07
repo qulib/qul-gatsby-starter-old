@@ -1,10 +1,53 @@
 #site-sidebar {
   background-color: $clr-qul-light-blue;
-  margin: 0 auto;
   max-width: $tablet;
-  padding: 2rem;
-  width: 100%;
   flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .link-symbol {
+    margin-top: -2rem;
+  }
+
+  .sidebar-block {
+    padding: 2rem 0;
+    width: 100%;
+
+    &:nth-child(odd) {
+      background-color: $clr-qul-lighter-blue;
+    }
+
+    h2 {
+      display: inline-block;
+      color: white;
+      padding: 0 2rem;
+      background-color: $clr-primary;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    p {
+      padding: 0 2rem;
+      font-size: 0.9rem;
+    }
+
+    button,
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+
+    .ask-us-link {
+      img {
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
 
   // @include breakpoint($desktop) {
 
