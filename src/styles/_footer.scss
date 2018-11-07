@@ -27,17 +27,17 @@
     }
   }
 
-  @include breakpoint($med-width) {
+  @include breakpoint($tablet) {
     justify-content: space-between;
     display: flex;
-    max-width: $med-width;
+    max-width: $tablet;
 
     .colophon {
       max-width: 70%;
     }
   }
 
-  @include breakpoint($max-width) {
-    max-width: $max-width;
+  @include breakpoint($desktop) {
+    max-width: $desktop;
   }
 }

@@ -1,12 +1,12 @@
 #site-sidebar {
   background-color: $clr-qul-light-blue;
   margin: 0 auto;
-  max-width: $med-width;
+  max-width: $tablet;
   padding: 2rem;
   width: 100%;
   flex-basis: 40%;
 
-  // @include breakpoint($max-width) {
+  // @include breakpoint($desktop) {
 
   // }
 }

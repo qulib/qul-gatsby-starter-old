@@ -1,17 +1,22 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Layout from '../components/Layout.jsx'
+import { Button } from 'antd'
 
-export default ({ data }) => {
-  return (
-    <Layout title="Home">
-      <h1>Home</h1>
-      <p>This is the home page.</p>
-      <h2>JSX pages</h2>
-      <ul>
-        <li><Link to="/html-test">HTML Test</Link></li>
-        <li><Link to="/material-ui-test">Material UI Test</Link></li>
-      </ul>
-    </Layout>
-  )
-}
+import Layout from '../components/Layout.jsx'
+// import Image from '../components/Image.jsx'
+
+const IndexPage = () => (
+  <Layout>
+    <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <Button type="primary">
+      <Link to="/page-2/">Primary Button</Link>
+    </Button>
+    <Button>
+      <Link to="/page-2/">Default Button</Link>
+    </Button>
+  </Layout>
+)
+
+export default IndexPage

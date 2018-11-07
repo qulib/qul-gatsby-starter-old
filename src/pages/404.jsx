@@ -1,11 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout.jsx'
+import '../styles/style.scss'
 
-export default ({ data }) => {
-  return (
-    <Layout>
-      <h1>Page Not Found</h1>
-      <p>You've tried to find a page that does not exits</p>
-    </Layout>
-  )
-}
+const NotFoundPage = () => (
+  <Layout>
+    <h1>NOT FOUND</h1>
+    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+  </Layout>
+)
+
+export default NotFoundPage
