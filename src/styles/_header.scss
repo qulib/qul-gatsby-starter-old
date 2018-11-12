@@ -24,33 +24,60 @@
 
       #util-nav,
       #main-nav {
-        border-right: 0;
-
         .ant-menu-item {
           width: auto;
         }
       }
 
-      /* Util Nav and Search */
+      /* Util Nav */
       #util-nav {
         display: flex;
         justify-content: flex-end;
+        border-right: 0;
 
-        .anticon, .site-search-button {
+        .anticon,
+        .site-search-button {
           font-size: 1rem !important;
         }
 
         button {
+          padding: 0;
           svg {
             transform: none;
           }
         }
 
         #site-search {
+          // width: 100%;
+          // max-width: 100%;
+          // border: 3px solid greenyellow;
+          overflow: visible;
 
+          .ant-input-search {
+            position: absolute;
+            right: 5rem;
+            z-index: 10;
+            width: 30rem;
+            top: -9999rem;
 
+            input {
+              &:focus {
+                box-shadow: 0 0 0 2px $clr-qul-yellow;
+              }
+            }
+          }
 
+          .active {
+            top: 5px;
+          }
 
+          // .ant-input-suffix {
+          //   display: none;
+          // }
+
+          .site-search-btn {
+            cursor: pointer;
+          }
         }
       }
 
@@ -58,6 +85,7 @@
       #main-nav {
         display: flex;
         justify-content: flex-end;
+        border-right: 0;
 
         .ant-menu-submenu-title {
           text-transform: uppercase;
