@@ -1,9 +1,10 @@
 .ant-btn {
   margin-right: 0.5rem;
+  border-bottom: 1px solid black;
 
   &:hover {
-    border-color: transparent !important;
-    // box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.1);
+    // border-color: transparent !important;
+    border-bottom: 1px solid black;
     opacity: 0.8;
   }
 
@@ -14,5 +15,13 @@
     &:hover {
       text-decoration: none !important;
     }
+  }
+}
+
+.ant-btn-primary {
+  background-color: $clr-primary;
+
+  &:hover {
+    background-color: $clr-primary;
   }
 }

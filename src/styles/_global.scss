@@ -8,6 +8,12 @@ p {
   line-height: 1.5;
 }
 
+button {
+  border-color: transparent;
+  background-color: transparent;
+  outline: none;
+}
+
 .container {
   max-width: $tablet;
   margin: 0 auto;

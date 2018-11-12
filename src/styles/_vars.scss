@@ -1,3 +1,8 @@
+/*
+* Colours
+* Sass color functions: https://robots.thoughtbot.com/controlling-color-with-sass-color-functions
+*/
+
 /* from Queen's logo */
 $queens-logo-black: #231f20;
 $queens-logo-red: #b81237;
@@ -5,26 +10,46 @@ $queens-logo-blue: #002f5e;
 $queens-logo-gold: #febe10;
 $queens-logo-purple: #662d91;
 
-/* from QUL website */
+/* Blues */
 $clr-qul-blue: #406486;
 $clr-qul-light-blue: #d9e0e7;
-$clr-qul-lighter-blue: #e5eaef;
-$clr-qul-yellow: #fcc34c;
-$clr-qul-gray: #8c8c8c;
+$clr-qul-lighter-blue: lighten($clr-qul-light-blue, 4%);
+$clr-qul-link-blue: #1d70ad;
 
-/* primary pallete */
+/* Reds */
+
+/* Yellows */
+$clr-qul-yellow: #fcc34c;
+
+/* Grays */
+$clr-qul-gray: #8c8c8c;
+$clr-qul-light-gray: lighten($clr-qul-gray, 20%);
+
+/*
+* Colour Usage
+*/
+
+/* Primary Pallete */
 $clr-primary: $queens-logo-blue;
 $clr-secondary: $queens-logo-red;
 
 /* text pallete */
 $clr-text-main: $queens-logo-black;
-$clr-text-link: #1d70ad;
+$clr-text-link: $clr-qul-link-blue;
 $clr-text-link-visited: $queens-logo-purple;
+
+/*
+* Responsive Design
+*/
 
 /* widths */
 $desktop: 1200px;
 $tablet: 750px;
 $buffer: 50px;
+
+/*
+* Typography
+*/
 
 /* fonts */
 $font-main: 'Open Sans', sans-serif;

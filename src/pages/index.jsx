@@ -14,7 +14,7 @@ const IndexPage = () => (
       <Link to="/page-2/">Primary Button</Link>
     </Button>
     <Button>
-      <Link to="/page-2/">Default Button</Link>
+      <Link to="/">Default Button</Link>
     </Button>
   </Layout>
 )

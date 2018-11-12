@@ -14,7 +14,7 @@ module.exports = {
           'border-radius-base': '0px',
           'heading-color': '#002f5e',
           'link-color': '#1d70ad',
-          'primary-color': '#002f5e',
+          'primary-color': '#1d70ad',
           'text-color': '#231f20',
           'btn-default-color': '#fff',
           'btn-default-bg': '#8c8c8c',

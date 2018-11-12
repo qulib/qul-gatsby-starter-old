@@ -1,7 +1,7 @@
 #site-header {
   background-color: white;
-  border-bottom: 3px solid $queens-logo-blue;
-  // padding: 1rem 2rem;
+  border-bottom: 3px solid $clr-primary;
+
   .container {
     @include breakpoint($desktop) {
       display: flex;
@@ -15,6 +15,7 @@
         padding: 0.5rem;
         max-width: 100%;
       }
+      padding-right: 1rem;
     }
 
     #menu-block {
@@ -24,11 +25,43 @@
       #util-nav,
       #main-nav {
         border-right: 0;
-        max-width: 100%;
-        overflow: hidden;
 
         .ant-menu-item {
           width: auto;
+        }
+      }
+
+      /* Util Nav and Search */
+      #util-nav {
+        display: flex;
+        justify-content: flex-end;
+
+        .anticon, .site-search-button {
+          font-size: 1rem !important;
+        }
+
+        button {
+          svg {
+            transform: none;
+          }
+        }
+
+        #site-search {
+
+
+
+
+        }
+      }
+
+      /* Main Nav */
+      #main-nav {
+        display: flex;
+        justify-content: flex-end;
+
+        .ant-menu-submenu-title {
+          text-transform: uppercase;
+          font-weight: 300;
         }
 
         .ant-menu-submenu {
@@ -47,21 +80,6 @@
           .ant-menu-submenu-arrow {
             display: block !important;
           }
-        }
-      }
-
-      #util-nav {
-        display: flex;
-        justify-content: flex-end;
-      }
-
-      #main-nav {
-        display: flex;
-        justify-content: flex-end;
-
-        .ant-menu-submenu-title {
-          text-transform: uppercase;
-          font-weight: 300;
         }
       }
     }
