@@ -6,7 +6,6 @@ import { FaKey, FaComments, FaUser } from 'react-icons/fa'
 import SiteSearch from './SiteSearch.jsx'
 
 class UtilMenu extends React.Component {
-
   rootSubmenuKeys = ['sub1', 'sub2', 'sub3', 'sub4']
 
   render() {
@@ -15,25 +14,25 @@ class UtilMenu extends React.Component {
         <Menu.Item key="off-campus">
           <Link to="/">
             <FaKey className="anticon" />
-            Off-Campus Access
+            <span className="label">Off-Campus Access</span>
           </Link>
         </Menu.Item>
         <Menu.Item key="ask-us">
           <Link to="/">
             <FaComments className="anticon" />
-            Ask Us
+            <span className="label">Ask Us</span>
           </Link>
         </Menu.Item>
         <Menu.Item key="my-account">
           <Dropdown overlay={MyAccountMenu} trigger={['click']}>
             <button className="ant-dropdown-link">
               <FaUser className="anticon" />
-              My Account
+              <span className="label">My Account</span>
             </button>
           </Dropdown>
         </Menu.Item>
         <Menu.Item key="site-search" id="site-search">
-          <SiteSearch/>
+          <SiteSearch />
         </Menu.Item>
       </Menu>
     )

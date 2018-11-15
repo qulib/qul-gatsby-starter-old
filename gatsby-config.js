@@ -8,7 +8,7 @@ module.exports = {
       resolve: 'gatsby-plugin-less',
       options: {
         modifyVars: {
-          // andt defaults
+          // Ant Design defaults
           'font-family': '"Open Sans", sans-serif',
           'body-background': 'transparent',
           'border-radius-base': '0px',

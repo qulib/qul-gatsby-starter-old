@@ -13,7 +13,7 @@ class Footer extends React.Component {
       <footer id="site-footer">
         <div className="colophon">
           <p>
-            © Copyright {date.getFullYear()}{' '}
+            © Copyright {date.getFullYear()}
             <Link to="/">Queen's University Library</Link>
           </p>
           <p>

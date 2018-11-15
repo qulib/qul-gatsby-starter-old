@@ -1,12 +1,84 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Menu } from 'antd'
+import windowSize from 'react-window-size'
+
+import MainMenuDesktop from './MainMenuDesktop.jsx'
+import MainMenuMobile from './MainMenuMobile.jsx'
 
 const SubMenu = Menu.SubMenu
-// const ItemGroup = Menu.ItemGroup
+const mobileBreakpoint = 1185
+
+const SearchMenu = (
+  <SubMenu key="search" title={<span>Search</span>}>
+    <Menu.Item key="1">
+      <Link to="/">Search</Link>
+    </Menu.Item>
+    <Menu.Item key="2">
+      <Link to="/">Option</Link>
+    </Menu.Item>
+    <Menu.Item key="3">
+      <Link to="/">Option</Link>
+    </Menu.Item>
+    <Menu.Item key="4">
+      <Link to="/">Option</Link>
+    </Menu.Item>
+  </SubMenu>
+)
+
+const HelpServicesMenu = (
+  <SubMenu key="help-services" title={<span>Help &amp; Services</span>}>
+    <Menu.Item key="1">
+      <Link to="/">Help &amp; Services</Link>
+    </Menu.Item>
+    <Menu.Item key="2">
+      <Link to="/">Option</Link>
+    </Menu.Item>
+    <Menu.Item key="3">
+      <Link to="/">Option</Link>
+    </Menu.Item>
+    <Menu.Item key="4">
+      <Link to="/">Option</Link>
+    </Menu.Item>
+  </SubMenu>
+)
+
+const LocationsHoursMenu = (
+  <SubMenu key="locations-hours" title={<span>Locations &amp; Hours</span>}>
+    <Menu.Item key="1">
+      <Link to="/">Locations &amp; Hours</Link>
+    </Menu.Item>
+    <Menu.Item key="2">
+      <Link to="/">Option</Link>
+    </Menu.Item>
+    <Menu.Item key="3">
+      <Link to="/">Option</Link>
+    </Menu.Item>
+    <Menu.Item key="4">
+      <Link to="/">Option</Link>
+    </Menu.Item>
+  </SubMenu>
+)
+
+const AboutUsMenu = (
+  <SubMenu key="about-us" title={<span>About Us</span>}>
+    <Menu.Item key="1">
+      <Link to="/">About Us</Link>
+    </Menu.Item>
+    <Menu.Item key="2">
+      <Link to="/">Option</Link>
+    </Menu.Item>
+    <Menu.Item key="3">
+      <Link to="/">Option</Link>
+    </Menu.Item>
+    <Menu.Item key="4">
+      <Link to="/">Option</Link>
+    </Menu.Item>
+  </SubMenu>
+)
 
 class MainMenu extends React.Component {
-  rootSubmenuKeys = ['sub1', 'sub2', 'sub3', 'sub4']
+  rootSubmenuKeys = ['search', 'help-services', 'locations-hours', 'about-us']
 
   state = {
     openKeys: [''],
@@ -27,74 +99,25 @@ class MainMenu extends React.Component {
 
   render() {
     return (
-      <Menu
-        id="main-nav"
-        mode="inline"
-        openKeys={this.state.openKeys}
-        onOpenChange={this.onOpenChange}
-        selectable={false}
-        subMenuOpenDelay={1}
-        subMenuCloseDelay={1}
-      >
-        <SubMenu key="sub1" title={<span>Search</span>}>
-          <Menu.Item key="1">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-          <Menu.Item key="3">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-          <Menu.Item key="4">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-        </SubMenu>
-        <SubMenu key="sub2" title={<span>Help &amp; Services</span>}>
-          <Menu.Item key="1">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-          <Menu.Item key="3">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-          <Menu.Item key="4">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-        </SubMenu>
-        <SubMenu key="sub3" title={<span>Locations &amp; Hours</span>}>
-          <Menu.Item key="1">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-          <Menu.Item key="3">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-          <Menu.Item key="4">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-        </SubMenu>
-        <SubMenu key="sub4" title={<span>About Us</span>}>
-          <Menu.Item key="1">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-          <Menu.Item key="3">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-          <Menu.Item key="4">
-            <Link to="/">Option</Link>
-          </Menu.Item>
-        </SubMenu>
-      </Menu>
+      <>
+        {this.props.windowWidth < mobileBreakpoint ? (
+          <MainMenuMobile>
+            {SearchMenu}
+            {HelpServicesMenu}
+            {LocationsHoursMenu}
+            {AboutUsMenu}
+          </MainMenuMobile>
+        ) : (
+          <MainMenuDesktop>
+            {SearchMenu}
+            {HelpServicesMenu}
+            {LocationsHoursMenu}
+            {AboutUsMenu}
+          </MainMenuDesktop>
+        )}
+      </>
     )
   }
 }
 
-export default MainMenu
+export default windowSize(MainMenu)

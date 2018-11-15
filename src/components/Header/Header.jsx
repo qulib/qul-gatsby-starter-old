@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import UtilMenu from './UtilMenu.jsx'
-import MainMenu from './MainMenu.jsx'
+import MainMenuDesktop from './MainMenu.jsx'
 
 import qulLogo from '../../images/qul-logo-middle.svg'
 
@@ -17,7 +17,7 @@ class Header extends React.Component {
 
           <div id="menu-block">
             <UtilMenu />
-            <MainMenu />
+            <MainMenuDesktop />
           </div>
         </div>
       </header>

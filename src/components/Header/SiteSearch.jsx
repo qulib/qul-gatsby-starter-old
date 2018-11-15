@@ -19,22 +19,17 @@ class SiteSearch extends React.Component {
   }
 
   handleClick() {
-    console.log('button clicked')
-    // this.setState(state => ({
-    //   searchIsActive: !state.searchIsActive,
-    // }))
-
+    if (this.state.searchIsActive) {
+      console.log('yep')
+    }
     this.textInput.current.focus()
-
   }
 
   onFocus() {
-    console.log('focused')
     this.setState({ searchIsActive: true })
   }
 
   onBlur() {
-    console.log('blurred')
     this.setState({ searchIsActive: false })
   }
 
@@ -52,6 +47,7 @@ class SiteSearch extends React.Component {
           onFocus={this.onFocus}
           onBlur={this.onBlur}
           className={this.state.searchIsActive ? 'active' : null}
+          // enterButton="Go"
         />
         <button className="site-search-btn" onClick={this.handleClick}>
           {this.state.searchIsActive ? (

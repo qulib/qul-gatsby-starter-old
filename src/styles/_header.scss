@@ -34,6 +34,19 @@
         display: flex;
         justify-content: flex-end;
         border-right: 0;
+        $util-nav-width: calc(100%);
+
+        li {
+          padding: 0;
+
+          .label {
+            display: none;
+
+            @include breakpoint($desktop) {
+              display: inline;
+            }
+          }
+        }
 
         .anticon,
         .site-search-button {
@@ -48,35 +61,48 @@
         }
 
         #site-search {
-          // width: 100%;
-          // max-width: 100%;
-          // border: 3px solid greenyellow;
           overflow: visible;
 
           .ant-input-search {
             position: absolute;
-            right: 5rem;
+            left: -9999px;
+            // left: -450px;
             z-index: 10;
-            width: 30rem;
-            top: -9999rem;
+            top: 5px;
+            width: 300px;
+
+            @include breakpoint($desktop) {
+              width: 450px;
+            }
 
             input {
-              &:focus {
-                box-shadow: 0 0 0 2px $clr-qul-yellow;
-              }
+              padding: 0;
+              box-shadow: 0 0 0 2px $clr-qul-yellow;
+              border: 0;
             }
           }
 
           .active {
-            top: 5px;
+            left: -300px;
+
+            @include breakpoint($desktop) {
+              left: -450px;
+            }
+            
+
+            input {
+              padding: 0 1rem;
+            }
           }
 
-          // .ant-input-suffix {
-          //   display: none;
-          // }
+          .ant-input-suffix {
+            display: none;
+          }
 
           .site-search-btn {
             cursor: pointer;
+            // border: 1px solid red;
+            min-width: 40px;
           }
         }
       }

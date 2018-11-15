@@ -1,6 +1,9 @@
 {
   "name": "qul-gatsby-starter",
-  "repository": "https://github.com/qulib/qul-gatsby-starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cardiv/gatsby-starter-antd"
+  },
   "description": "A stater template for Gatsby at QUL",
   "version": "1.2.0",
   "author": "Paul Clifford",
@@ -24,6 +27,7 @@
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
+    "react-window-size": "^1.2.2",
     "typeface-open-sans": "0.0.54"
   },
   "keywords": [
@@ -43,9 +47,5 @@
   "devDependencies": {
     "prettier": "^1.14.2",
     "rimraf": "^2.6.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cardiv/gatsby-starter-antd"
   }
 }
