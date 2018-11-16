@@ -1,16 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Menu } from 'antd'
+import { Menu, Drawer } from 'antd'
 import windowSize from 'react-window-size'
-
-import MainMenuDesktop from './MainMenuDesktop.jsx'
-import MainMenuMobile from './MainMenuMobile.jsx'
+import { FaBars } from 'react-icons/fa'
 
 const SubMenu = Menu.SubMenu
 const mobileBreakpoint = 1185
 
 const SearchMenu = (
-  <SubMenu key="search" title={<span>Search</span>}>
+  // <SubMenu key="search" title={<span>Search</span>}>
+  <SubMenu key="search" title="Search">
     <Menu.Item key="1">
       <Link to="/">Search</Link>
     </Menu.Item>
@@ -27,7 +26,7 @@ const SearchMenu = (
 )
 
 const HelpServicesMenu = (
-  <SubMenu key="help-services" title={<span>Help &amp; Services</span>}>
+  <SubMenu key="help-services" title="Help &amp; Services">
     <Menu.Item key="1">
       <Link to="/">Help &amp; Services</Link>
     </Menu.Item>
@@ -44,7 +43,7 @@ const HelpServicesMenu = (
 )
 
 const LocationsHoursMenu = (
-  <SubMenu key="locations-hours" title={<span>Locations &amp; Hours</span>}>
+  <SubMenu key="locations-hours" title="Locations &amp; Hours">
     <Menu.Item key="1">
       <Link to="/">Locations &amp; Hours</Link>
     </Menu.Item>
@@ -61,7 +60,7 @@ const LocationsHoursMenu = (
 )
 
 const AboutUsMenu = (
-  <SubMenu key="about-us" title={<span>About Us</span>}>
+  <SubMenu key="about-us" title="About Us">
     <Menu.Item key="1">
       <Link to="/">About Us</Link>
     </Menu.Item>
@@ -84,6 +83,18 @@ class MainMenu extends React.Component {
     openKeys: [''],
   }
 
+  showDrawer = () => {
+    this.setState({
+      visible: true,
+    })
+  }
+
+  onClose = () => {
+    this.setState({
+      visible: false,
+    })
+  }
+
   onOpenChange = openKeys => {
     const latestOpenKey = openKeys.find(
       key => this.state.openKeys.indexOf(key) === -1
@@ -99,23 +110,49 @@ class MainMenu extends React.Component {
 
   render() {
     return (
-      <>
+      <div id="main-nav">
         {this.props.windowWidth < mobileBreakpoint ? (
-          <MainMenuMobile>
-            {SearchMenu}
-            {HelpServicesMenu}
-            {LocationsHoursMenu}
-            {AboutUsMenu}
-          </MainMenuMobile>
+          <>
+            <button className="mobile-nav-btn" onClick={this.showDrawer}>
+              <FaBars />
+            </button>
+
+            <Drawer
+              onClose={this.onClose}
+              visible={this.state.visible}
+              placement="left"
+            >
+              <Menu
+                className="qul-menu mobile"
+                mode="inline"
+                openKeys={this.state.openKeys}
+                onOpenChange={this.onOpenChange}
+                selectable={false}
+              >
+                {SearchMenu}
+                {HelpServicesMenu}
+                {LocationsHoursMenu}
+                {AboutUsMenu}
+              </Menu>
+            </Drawer>
+          </>
         ) : (
-          <MainMenuDesktop>
+          <Menu
+            className="qul-menu desktop"
+            mode="inline"
+            openKeys={this.state.openKeys}
+            onOpenChange={this.onOpenChange}
+            selectable={false}
+            subMenuOpenDelay={1}
+            subMenuCloseDelay={1}
+          >
             {SearchMenu}
             {HelpServicesMenu}
             {LocationsHoursMenu}
             {AboutUsMenu}
-          </MainMenuDesktop>
+          </Menu>
         )}
-      </>
+      </div>
     )
   }
 }

@@ -14,7 +14,7 @@ class Footer extends React.Component {
         <div className="colophon">
           <p>
             © Copyright {date.getFullYear()}
-            <Link to="/">Queen's University Library</Link>
+            <Link to="/"> Queen's University Library</Link>
           </p>
           <p>
             Queen's University Library is committed to an inclusive library
