@@ -28,6 +28,7 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
     "react-window-size": "^1.2.2",
+    "sanitize.css": "^8.0.0",
     "typeface-open-sans": "0.0.54"
   },
   "keywords": [

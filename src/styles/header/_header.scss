@@ -77,14 +77,13 @@
         * Site Search
         */
         #site-search {
-          // width: 40vw;
           width: 100%;
           display: flex;
           justify-content: flex-end;
+          height: 40px;
 
           .ant-input-search {
             width: 40px;
-            // transition: width 0.5s;
 
             input {
               border: 0;
@@ -92,6 +91,7 @@
 
             &.search-active {
               width: 100%;
+              
               input {
                 box-shadow: 0 0 0 1px $clr-qul-yellow;
               }
