@@ -1,11 +1,8 @@
-@import '~sanitize.css';
-
-@import 'global/vars';
-@import 'global/mixins';
-@import 'global/global';
-@import 'global/antd-overides';
-@import 'header/header';
-@import 'main/breadcrumbs';
-@import 'main/main';
-@import 'main/sidebar';
-@import 'footer/footer';
+@import 'sass/vars';
+@import 'sass/mixins';
+@import 'sass/global';
+@import 'sass/header';
+@import 'sass/breadcrumbs';
+@import 'sass/main';
+@import 'sass/sidebar';
+@import 'sass/footer';

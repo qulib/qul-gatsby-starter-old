@@ -1,34 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'QUL Gatsby Antd Starter',
-    siteUrl: `https://www.example.com`,
+    title: 'QUL Gatsby Starter',
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-less',
-      options: {
-        modifyVars: {
-          // Ant Design defaults
-          'font-family': '"Open Sans", sans-serif',
-          'body-background': 'transparent',
-          'border-radius-base': '0px',
-          'heading-color': '#002f5e',
-          'link-color': '#1d70ad',
-          'primary-color': '#1d70ad',
-          'text-color': '#231f20',
-          'btn-default-color': '#fff',
-          'btn-default-bg': '#8c8c8c',
-          'btn-default-border': '#8c8c8c'
-        },
-        javascriptEnabled: true,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-antd',
-      options: {
-        style: true,
-      },
-    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {

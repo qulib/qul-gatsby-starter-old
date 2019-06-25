@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { Button } from 'antd'
-
 import LinkSymbol from '../images/link-symbol.svg'
 import AskUsSymbol from '../images/ask-us-symbol.svg'
 
@@ -17,7 +15,10 @@ const Sidebar = () => (
     />
     <div className="sidebar-block">
       <h2>Ask Us</h2>
-      <p>For help locating resources, using the library, or to request a research consultation, try our Ask Us service.</p>
+      <p>
+        For help locating resources, using the library, or to request a research
+        consultation, try our Ask Us service.
+      </p>
       <Link to="/page-2/" className="ask-us-link">
         <img src={AskUsSymbol} alt="Ask Us" width="100" height="100" />
       </Link>
@@ -29,9 +30,6 @@ const Sidebar = () => (
     <div className="sidebar-block">
       <h2>Button Block</h2>
       <p>A block with a button</p>
-      <Button>
-        <Link to="/page-2/">Default Button</Link>
-      </Button>
     </div>
   </aside>
 )

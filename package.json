@@ -1,18 +1,16 @@
 {
   "name": "qul-gatsby-starter",
+  "description": "A stater template for Gatsby at QUL",
+  "version": "1.2.0",
+  "author": "Paul Clifford",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/cardiv/gatsby-starter-antd"
   },
-  "description": "A stater template for Gatsby at QUL",
-  "version": "1.2.0",
-  "author": "Paul Clifford",
   "dependencies": {
-    "antd": "^3.16.6",
     "gatsby": "^2.3.34",
     "gatsby-image": "^2.0.41",
-    "gatsby-plugin-antd": "^2.0.2",
-    "gatsby-plugin-less": "^2.0.12",
     "gatsby-plugin-manifest": "^2.0.29",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.12",
@@ -26,18 +24,9 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
-    "react-icons": "^3.6.1",
     "react-window-size": "^1.2.2",
-    "sanitize.css": "^8.0.0",
     "typeface-open-sans": "0.0.54"
   },
-  "keywords": [
-    "antd",
-    "gatsby",
-    "react",
-    "webpack"
-  ],
-  "license": "MIT",
   "scripts": {
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",
@@ -46,7 +35,7 @@
     "clean": "rimraf .cache public"
   },
   "devDependencies": {
-    "prettier": "^1.17.0",
+    "prettier": "^1.18.2",
     "rimraf": "^2.6.3"
   }
 }

@@ -1,6 +1,5 @@
 /*
 * Colours
-* Sass color functions: https://robots.thoughtbot.com/controlling-color-with-sass-color-functions
 */
 
 /* from Queen's logo */
@@ -15,8 +14,6 @@ $clr-qul-blue: #406486;
 $clr-qul-light-blue: #d9e0e7;
 $clr-qul-lighter-blue: lighten($clr-qul-light-blue, 4%);
 $clr-qul-link-blue: #1d70ad;
-
-/* Reds */
 
 /* Yellows */
 $clr-qul-yellow: #fcc34c;
@@ -41,11 +38,6 @@ $clr-text-link-visited: $queens-logo-purple;
 /*
 * Responsive Design
 */
-
-/* widths */
-$desktop: 1200px;
-$tablet: 750px;
-$buffer: 50px;
 
 /*
 * Typography

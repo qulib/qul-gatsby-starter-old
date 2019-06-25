@@ -1,13 +1,5 @@
 #site-main {
   background-color: white;
-  padding: 2rem 2rem 4rem;
-  width: 100%;
-  max-width: $tablet;
-  margin: 0 auto;
-
-  // @include breakpoint($max-width) {
-
-  // }
 
   a {
     color: $clr-text-link;
@@ -27,15 +19,13 @@
   h5,
   h6 {
     font-family: $font-main;
-    margin: 2rem 0 1rem 0;
     color: $clr-primary;
     font-weight: 300;
   }
 
   h1 {
     font-size: 2.5rem;
-    margin-top: 0;
-    // text-transform: capitalize;
+    // margin-top: 0;
   }
 
   h2 {
@@ -67,23 +57,11 @@
       line-height: 1.8rem;
 
       &:before {
-        // https://www.w3schools.com/charsets/ref_utf_geometric.asp
         content: '\25CF';
         color: $clr-secondary;
         padding-right: 1rem;
       }
     }
-  }
-
-  ol {
-
-    padding-inline-start: 1.7rem;
-
-    li {
-      line-height: 1.8rem;
-      padding-left: 0.5rem;
-    }
-
   }
 
   blockquote {
@@ -94,7 +72,6 @@
     font-weight: 300;
     background-size: 100px;
     min-height: 100px;
-    display: flex;
 
     p {
       padding-left: 4rem;

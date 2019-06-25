@@ -5,11 +5,11 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import 'typeface-open-sans'
 
-import Header from './Header/Header.jsx'
+import Header from './Header.jsx'
 import Breadcrumbs from './Breadcrumbs.jsx'
 import Main from './Main.jsx'
 import Sidebar from './Sidebar.jsx'
-import Footer from './Footer/Footer.jsx'
+import Footer from './Footer.jsx'
 
 const Layout = ({ children }) => (
   <StaticQuery

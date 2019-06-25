@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 // import FooterMenu from './FooterMenu.jsx'
 
-import quLogo from '../../images/qu-logo.svg'
+import quLogo from '../images/qu-logo.svg'
 
 const date = new Date()
 
